@@ -1,0 +1,20 @@
+﻿
+<h1>first click on the link for trial class and then fill this form</h1>
+
+<EditForm Model="Genre" OnSubmit="@OnValidSumit">
+    <InputText @bind-Value="@Genre.Name"></InputText>
+    <InputText @bind-Value="@Genre.Phone"></InputText>
+    <InputText @bind-Value="@Genre.Gmail"></InputText>
+    <button type="submit">Sumit</button>
+
+</EditForm>
+
+    <button type="submit" style="background:border-box;background-color:aqua"   <a href="https://meet.google.com/mxh-rsth-ysa" ><h1>Trial class</h1></a> </button>
+
+
+@code
+{
+
+    [Parameter] public Class1 Genre { get; set; }
+    [Parameter] public EventCallback OnValidSumit { get; set; }
+}
